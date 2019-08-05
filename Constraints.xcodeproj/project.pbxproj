@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F83E924A22F7D13900E73C92 /* Constraints.h in Headers */ = {isa = PBXBuildFile; fileRef = F83E924822F7D13900E73C92 /* Constraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F83E925122F7D16D00E73C92 /* fillsuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83E925022F7D16D00E73C92 /* fillsuperview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F83E924522F7D13900E73C92 /* Constraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Constraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83E924822F7D13900E73C92 /* Constraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constraints.h; sourceTree = "<group>"; };
 		F83E924922F7D13900E73C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F83E925022F7D16D00E73C92 /* fillsuperview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fillsuperview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				F83E924822F7D13900E73C92 /* Constraints.h */,
 				F83E924922F7D13900E73C92 /* Info.plist */,
+				F83E925022F7D16D00E73C92 /* fillsuperview.swift */,
 			);
 			path = Constraints;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					F83E924422F7D13900E73C92 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83E925122F7D16D00E73C92 /* fillsuperview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		F83E924E22F7D13900E73C92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Great-Okonkwo.Constraints";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		F83E924F22F7D13900E73C92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
